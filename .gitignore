@@ -55,3 +55,6 @@ bower.json
 
 # Ignore Byebug command history file.
 .byebug_history
+
+# Remove the Gemfile.lock
+Gemfile.lock
