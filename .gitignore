@@ -13,7 +13,7 @@
 /public/uploads
 
 # Ignore db creds / settings
-/config/database.yml
+/g/database.yml
 
 *.rbc
 capybara-*.html
@@ -28,7 +28,7 @@ rerun.txt
 pickle-email-*.html
 
 # TODO Comment out these rules if you are OK with secrets being uploaded to the repo
-config/initializers/secret_token.rb
+g/initializers/secret_token.rb
 config/secrets.yml
 
 # dotenv
@@ -55,3 +55,6 @@ bower.json
 
 # Ignore Byebug command history file.
 .byebug_history
+
+# Remove the Gemfile.lock
+Gemfile.lock

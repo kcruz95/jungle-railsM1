@@ -1,5 +1,10 @@
 <section class="cart-show">
+  <% if enhanced_cart.empty? %>
 
+  <h1>Cart Empty</h1>
+  <button type="button" class="btn btn-light btn-lg btn-block"><%= link_to "Head Back", "/products"%></button>
+
+  <% else %>
   <header class="page-header">
     <h1>My Cart</h1>
   </header>
@@ -25,7 +30,7 @@
             TOTAL:
           </th>
           <th>
-            <%= cart_subtotal_cents / 100.0 %>
+            <%= humanized_money_with_symbol cart_subtotal_cents / 100.0 %>
           </th>
         </tr>
       </tfoot>
@@ -49,4 +54,5 @@
     </div>
   </div>
 
+<% end %>
 </section>
